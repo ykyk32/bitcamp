@@ -1,0 +1,32 @@
+package class_;
+
+
+class This{
+	private int a;
+	
+	
+	public void setA(int a) {
+		a=a;
+	}
+	public int getA() {
+		return a;
+	}
+	//setter -set메소드만들기
+	//getter -get메소드만들기
+		
+}
+
+
+
+//-----------------------------------------------------------
+
+public class ThisMain {
+
+	public static void main(String[] args) {
+		This t = new This();
+		t.setA(10);
+		System.out.println(t.getA());
+
+	}
+
+}

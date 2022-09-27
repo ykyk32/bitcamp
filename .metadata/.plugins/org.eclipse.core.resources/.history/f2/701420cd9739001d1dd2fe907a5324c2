@@ -1,0 +1,31 @@
+package array;
+
+import java.util.Scanner;
+import java.util.Random;
+public class Prac {
+	public static void main(String[] args) {
+		char[] ar= new char[50];
+		int[] count = new int[26];
+		
+		Random r= new Random();
+		
+		for(int i=0;i<ar.length;i++) {
+			ar[i]=(char)(r.nextInt(26)+65);
+			System.out.println(ar[i]+ " ");
+			if (i%10 ==0) System.out.println();
+		}
+		
+		
+		
+		for(int i=0;i<ar.length;i++) {
+			for(int j =0;j<count.length;j++) {
+				if(ar[i]==j+65)count[j]++;
+			}
+		}
+		
+		for(int j=0;j<count.length;j++) {
+			System.out.println((char)(j+65)+" : "+ count[j]);
+			
+		}
+	}
+}

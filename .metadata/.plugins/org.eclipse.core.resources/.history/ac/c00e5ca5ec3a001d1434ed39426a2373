@@ -1,0 +1,44 @@
+package class_;
+
+
+class This{
+	private int a;
+	
+	
+	public void setA(int a) {
+	//	a=a;
+	//인수a	  //인수 a
+		System.out.println("this = "+this);
+		this.a=a;
+		//클래스의 a 라고 알려주기
+	}
+	public int getA() {
+		return a;//this가 생략됏다
+			  //필드 a
+	}
+	//setter -set메소드만들기
+	//getter -get메소드만들기
+		
+}
+
+
+
+//-----------------------------------------------------------
+
+public class ThisMain {
+
+	public static void main(String[] args) {
+		This t = new This();
+		System.out.println("객체 t = " +t);
+		t.setA(10);
+		System.out.println(t.getA());
+		
+		This s = new This();
+		System.out.println("객체 t = " +s);
+		s.setA(20);
+		System.out.println(s.getA());
+		
+
+	}
+
+}

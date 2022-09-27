@@ -1,0 +1,80 @@
+package for_;
+
+import java.util.Scanner;
+
+public class AddGame {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int a, b, user, score;
+		String yn;
+				
+		while(true) {
+			int count = 0;//점수 초기화
+			for(int i=1;i<=5;i++) {
+				a=(int)(Math.random()*90+10);
+				b=(int)(Math.random()*90+10);
+				
+				
+				for(int j=1;j<=2;j++) { //기회를 한 번 더
+					
+					System.out.print("["+i+"]"+a +" + "+b+" = ");
+					user = scan.nextInt();
+					if (user == (a+b)) {
+						System.out.println("딩동뎅");
+						count++;
+						break;  //for j 나가라
+					}
+					else {System.out.println("틀렸다");
+						if (j==2)System.out.print("정답은 " + (a+b));
+						System.out.println();
+					}
+					
+				}
+					
+			
+			}
+			System.out.println();
+			score = 20 *count;
+			System.out.println("당신은 총 " +count+"문제를 맞추어서 점수 "+score+"점 입니다.");
+			
+			System.out.println();
+			do {
+				System.out.print("\n 또 할래(Y/N) : ");
+				yn =scan.next();
+				
+			}while(!yn.equals("Y") && !yn.equals("y") &&!yn.equals("N") && !yn.equals("n"));
+			
+			if(yn.equals("N") || yn.equals("n")) {
+				System.out.println("프로그램을 종료합니다");
+				break; //while 나가라
+			}
+		}//while
+	}
+}
+
+/*
+ [문제] 덧셈 계산(for, while, 다중 for)
+ - 10 ~ 99 사이의 난수 2개를 발생하여 합을 구하는 프로그램
+ - 5문제를 재공한다.
+ - 1문제당 점수 20점씩 처리한다.
+ - 틀리면 1번더 기회를 주고, 2번다틀리면 답을 알려준다.
+ [실행결과]
+[1] 25 + 36 = 50 
+ 틀렸다 
+[1] 25 + 36 = 59
+ 틀렸다 정답은 xx
+ 
+[2]10 + 25 =35
+ 딩동뎅
+ 
+[5]89 + 95 =89
+ 틀렸다 정답은 xx
+ 
+ 당신은 총 x문제를 맞추어서 점수 xx점 입니다.
+ 
+ 또 할래(Y/N) :
+ -y나 n이 아닐경우 - 또 할래(Y/N) :
+ 프로그램을 종료합니다.
+
+ */

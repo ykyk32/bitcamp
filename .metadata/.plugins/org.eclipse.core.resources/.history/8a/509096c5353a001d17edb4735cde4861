@@ -1,0 +1,16 @@
+package method;
+
+public class Method01 {
+
+	public static void main(String[] args) {
+		
+		Method01 m =new Method01();//생성
+		
+		int sum = m.add(25, 36);//호출
+
+	}
+	public int add(int a,int b){//구현
+		return a+b;
+	}
+
+}

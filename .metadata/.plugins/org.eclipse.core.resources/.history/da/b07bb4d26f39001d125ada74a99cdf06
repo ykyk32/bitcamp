@@ -1,0 +1,18 @@
+package array;
+
+public class Array06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+ [문제] 로또
+ - 돈을 입력받아서 난수가 자동으로 발생하는 프로그램
+ 
+ [실행결과]
+ 현금입력 : 7000
+ 
+ */

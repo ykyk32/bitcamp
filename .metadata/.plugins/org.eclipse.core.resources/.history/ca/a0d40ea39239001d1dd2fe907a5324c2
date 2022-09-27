@@ -1,0 +1,20 @@
+package array;
+
+import java.util.Scanner;
+
+public class Prac {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("배열 크기 입력 : ");
+		int size = scan.nextInt();
+		int sum=0;
+		
+		
+		int[] ar = new int[size];
+		for (int i = 0; i<size;i++) {
+			System.out.print("ar["+ i + "] 입력 : ");
+			ar[i] = scan.nextInt();
+		}
+	}
+}

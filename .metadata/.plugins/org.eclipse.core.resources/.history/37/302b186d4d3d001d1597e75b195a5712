@@ -1,0 +1,13 @@
+package inheritence;
+
+public class Sub extends Super{
+	public Sub() {
+		System.out.println("Sub  기본 생성자");
+	}
+
+	public static void main(String[] args) {
+		Sub aa = new Sub();
+
+	}
+
+}

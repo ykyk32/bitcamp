@@ -1,0 +1,16 @@
+package inheritence;
+
+
+class Test extends Object{//자바의 모든 클래스는 Object로 부터 상속받는다. 안 적혀있어도
+	
+}
+//--------------------------------------
+public class ObjectMain {
+
+	public static void main(String[] args) {
+		Test t = new Test();
+		System.out.println("객체 t = "+ t);
+		System.out.println("객체 t = "+ t.toString());
+	}
+
+}

@@ -1,0 +1,23 @@
+package constructor;
+
+
+class Hello{
+	private String name;
+	private int age;
+	
+	public void Hello() {
+		System.out.println("기본 생성자");
+	}
+	
+}
+
+
+//----------------------------
+public class ConstructorMain {
+
+	public static void main(String[] args) {
+		Hello aa = new Hello();//>생성자 호출
+
+	}
+
+}

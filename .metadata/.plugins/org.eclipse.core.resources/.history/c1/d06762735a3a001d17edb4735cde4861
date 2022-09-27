@@ -1,0 +1,15 @@
+package multi;
+
+public class ZZZZZZZZZZZZ {
+
+	public static void main(String[] args) {
+		int [][] ar = new int [3][2];
+		
+		ar[0][0]=10;
+		ar[][]=20;
+		
+		ar[][]=;
+
+	}
+
+}

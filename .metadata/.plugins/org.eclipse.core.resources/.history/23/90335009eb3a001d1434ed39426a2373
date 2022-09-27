@@ -1,0 +1,25 @@
+package class_;
+
+
+class This{
+	public int a;
+	
+	
+	
+	
+}
+
+
+
+//-----------------------------------------------------------
+
+public class ThisMain {
+
+	public static void main(String[] args) {
+		This t = new This();
+		t.a=10;
+		System.out.println(t.a);
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package array;
+
+public class Array05 {
+
+	public static void main(String[] args) {
+		
+		char random = (char)(Math.random()*26+65);
+		char[] ar = new char[random];
+		int mul=10;
+		
+		for(int w=0;w<=4;w++)
+			for(int i =0+mul*w; i<=9+mul*w;i++) {
+				System.out.println(ar[i]);
+				System.out.println();
+			}
+
+	}
+
+}
+
+/*
+[문제] 배열 2개 if for
+크기가 50개인 문자배열(char)을 잡아서 65 ~ 90 사이의 난수를 발생하여 저장 후 출력하시오
+- 1줄에 10개씩 출력
+- A의 개수?B의 개수?C의개수?~~~~Z의개수?
+
+
+
+ [실행결과]
+D F A G H I J K L T
+O P W E R F V A S B
+P Y R O L E E Z L I
+F E U Z T U P P P A
+S P G B F F O W J C
+
+A : 2
+B : 3
+...
+X : 0
+Y : 1
+Z : 0
+ 
+ 
+ 
+ */

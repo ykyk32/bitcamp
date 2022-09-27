@@ -1,0 +1,8 @@
+package class_;
+
+public class MemberDTO {
+
+}
+
+
+//DTO- Data Transfer Object 데이터를 묶어놓은 객체

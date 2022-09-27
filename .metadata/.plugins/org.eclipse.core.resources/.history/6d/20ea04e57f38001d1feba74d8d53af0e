@@ -1,0 +1,16 @@
+package while_;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		
+		//A B C D E F ~~~~ X Y Z
+		char ch = 'A';
+		do {
+			ch++;
+			System.out.print(ch + " ");
+		}while(ch < 'Z');
+
+	}
+
+}

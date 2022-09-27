@@ -1,0 +1,23 @@
+package array;
+
+public class SelectionSort {
+
+	public static void main(String[] args) {
+		int[] ar= {35,48,25,72,50};
+		
+		System.out.println("정렬전 : ");
+		for(int data : ar){
+			System.out.println(data+" ");
+		}
+		System.out.println();
+		
+		System.out.println("정렬후 : ");
+		for(int data : ar){
+			System.out.println(data+" ");
+		}
+		System.out.println();
+		
+
+	}
+
+}

@@ -1,0 +1,44 @@
+package inheritence;
+
+class AA{
+	public int a=3;
+	public void disp() {
+		a+=5;
+		System.out.print("AA : "+a +" ");
+	}
+}
+//----------------------
+class BB extends AA{
+	public int a=8;//over는 메소드만 적용
+	public void disp() {
+		this.a += 5;
+		System.out.print("BB : "+a +" ");
+	}
+}
+//----------------------
+public class TestMain {
+
+	public static void main(String[] args) {
+		BB aa= new BB();
+		aa.disp();//BB : 13
+		System.out.println("aa : "+aa.a);//13
+		System.out.println();
+		
+		
+		AA bb= new BB();//부모 자식
+		bb.disp();//BB : 13 
+		System.out.println("aa : "+bb.a);//3 a는 메소드아니니까 override 없음
+		System.out.println();
+		
+		BB dd= (BB)bb;//자식 =(자식)부모
+		dd.disp();//BB : 18
+		System.out.println("dd : "+dd.a);//18 
+		System.out.println();
+		
+		AA cc =new AA();
+		cc.disp();
+		System.out.println("cc : "+ cc.a);//8
+		System.out.println();
+	}
+
+}

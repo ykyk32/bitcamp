@@ -1,0 +1,58 @@
+package while_;
+
+import java.util.Scanner;
+
+public class Game {
+
+	public static void main(String[] args) {
+		Scanner scan =new Scanner(System.in);
+		int com, user,count =0;
+		
+		while(true) {
+			com = (int)(Math.random()*100+1);
+			System.out.println("1 ~ 100사이의 숫자를 맞추세요");
+			
+			while(true){
+				System.out.print("숫자입력 : ");
+				user = scan.nextInt();
+				count++;
+				
+				if (com == user) {
+					break;
+				}else if(com > user) {
+					System.out.println(user + "보다 큰 숫자입니다");
+				}else {System.out.println(user + "보다 작은 숫자입니다.");}
+				
+				
+			}//while
+			System.out.println();
+			System.out.println("딩동뎅 "+count +"번 만에 맞추셨습니다.");
+			
+			System.out.print("\n 또 할래(Y/N) : ");
+			String yn =scan.next();
+			if(yn.equals("N") || yn.equals("n")) break; // break는 소속된 while문 1개만 벗어난다.
+			
+			
+		}//while
+		System.out.println("프로그램 종료합니다.");
+	}
+
+}
+
+//반복회수 제한있을때는 for문,제한 없을때는 while문이 편하다.
+
+/*[문제] 숫자 맞추기 게임
+- 컴퓨터가 1 ~ 100사이의 난수를 발생하면, 발생한 난수를 맞추는 게임
+- 몇 번만에 맟주었는지 출력한다.
+
+[실행결과]
+1 ~ 100사이의 숫자를 맞추세요 (77)
+
+숫자 입력 : 50
+50보다 큰 숫자입니다
+숫자 입력 : 80
+80보다 작은 숫자입니다.
+~
+~
+숫자 입력 : 77
+딩동뎅...x번만에 맞추셨습니다.*/

@@ -1,0 +1,19 @@
+package class2;
+
+public class StringMain {
+
+	public static void main(String[] args) {
+		String a= "apple";//literal 생성
+		String b= "apple";		
+		if(a==b)System.out.println("a와 b의 참조값은 같다");
+		else System.out.println("a와 b의 참조값은 다르다");
+		if(a.equals(b))System.out.println("a와 b의 문자열은 같다");
+		else System.out.println("a와 b의 문자열은 다르다");
+		System.out.println();
+		
+		String c = new String("apple");
+		String d = new String("apple");
+
+	}
+
+}

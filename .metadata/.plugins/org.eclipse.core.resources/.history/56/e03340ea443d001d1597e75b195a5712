@@ -1,0 +1,9 @@
+package class_;
+
+//1인분
+public class MemberDTO {
+
+}
+
+
+//DTO- Data Transfer Object 데이터를 묶어놓은 객체/VO -Value Object /Bean -아무튼 3개 다 1인분

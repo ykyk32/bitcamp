@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ShapeMain.java&apos; to &apos;07_abstract/src/abstract_&apos;&#x0D;&#x0A;- Original project: &apos;06_inheritence&apos;&#x0D;&#x0A;- Destination element: &apos;07_abstract/src/abstract_&apos;&#x0D;&#x0A;- Original element: &apos;inheritence.ShapeMain.java&apos;" description="Copy compilation unit" destination="=07_abstract/src&lt;abstract_" element1="/src&lt;inheritence{ShapeMain.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1664249258970" units="1" version="1.0"/>
+</session>

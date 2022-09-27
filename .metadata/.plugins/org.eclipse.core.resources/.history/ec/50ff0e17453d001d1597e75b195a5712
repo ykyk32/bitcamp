@@ -1,0 +1,9 @@
+package class_;
+
+public class MemberService {
+	private MemberDTO[] ar= new MemberDTO[5];
+	//필드는 이제끝 ->메소드 설정한다.
+}
+
+
+//일, menu(),insert() delete()

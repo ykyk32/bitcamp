@@ -1,0 +1,18 @@
+package multi;
+
+public class Zzz {
+
+	public void disp() {
+		System.out.println("non static method");
+	}
+	public static void output() {
+		System.out.println("static method");
+	}
+	
+	public static void main(String[] args) {
+		
+		Zzz.output();
+		output();
+	}
+
+}
