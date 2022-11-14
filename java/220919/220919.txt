@@ -1,0 +1,25 @@
+패키지 (폴더)
+java
+  io
+  lang - default (JVM이 알고있다.)
+  util
+  text
+  sql
+ 
+
+java.lang 패키지 안에 있는 것은 import를 안해도 된다.
+
+
+
+------------------------------------------------------
+heap 영역
+
+
+객체 b = "apple"
+c			java
+메모리의 실제주소           	참조값(reference)-실제 데이터가 아님
+
+--------------------------------------------------------------
+java project : 02_if
+package : if_
+class : If01

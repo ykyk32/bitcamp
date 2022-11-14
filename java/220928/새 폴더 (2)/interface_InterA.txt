@@ -1,0 +1,10 @@
+package interface_;
+
+public interface InterA {
+	public static final String NAME ="홍길동";//상수
+	public int AGE=25;//interface에는 상수만 오기때문에 static final abstract생략가능
+	
+	
+	public abstract void aa();
+	public void bb();
+}

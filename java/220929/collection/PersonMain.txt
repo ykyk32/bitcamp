@@ -1,0 +1,40 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class PersonMain {
+
+	public ArrayList<PersonDTO> init() {
+		PersonDTO aa = new PersonDTO("홍길동",25);
+		PersonDTO bb = new PersonDTO("프로도",40);
+		PersonDTO cc = new PersonDTO("죠르디",30);
+		
+		ArrayList<PersonDTO> list = new ArrayList<PersonDTO>();
+		list.add(aa);
+		list.add(bb);
+		list.add(cc);
+		
+		return list;
+		//return aa,bb,cc;//자바는 리턴 하나만 줄수있다
+		
+	}
+	public static void main(String[] args) {
+		
+		PersonMain personMain= new PersonMain();
+		
+		ArrayList<PersonDTO> list = personMain.init(); //호출
+		
+		for(PersonDTO personDTO : list) {
+			System.out.println(personDTO);
+		}//for
+		
+	}
+
+}
+/*
+aa, bb, cc 값을 출력하시오
+
+이름 = 홍길동 나이 = 25
+이름 = 프로도 나이 = 40
+이름 = 죠르디 나이 = 30
+*/

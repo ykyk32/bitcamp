@@ -1,0 +1,24 @@
+package abstract_;
+
+//import static java.lang.Math.random;
+//import static java.lang.Math.pow;
+import static java.lang.Math.*;//모든 것, wild card..비추
+							   // 패키지명은 와일드카드 안됨
+import static java.lang.String.format;
+import static java.lang.System.out;
+
+public class ImportStatic {
+
+	public static void main(String[] args) {
+		System.out.println("난수 = "+Math.random());
+		System.out.println("난수 = "+random());//import 한 뒤에 사용가능
+		
+		System.out.println("제곱 = "+Math.pow(3, 4));//3의4승
+		System.out.println("제곱 = "+pow(3, 4));
+		
+		out.println("제곱 = "+pow(3, 4));
+		
+		out.println("소수 이하 2째 자리 ="+ format("%.2f",43.45678));
+	}
+
+}

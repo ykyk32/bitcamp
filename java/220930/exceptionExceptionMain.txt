@@ -1,0 +1,32 @@
+package exception;
+
+import java.util.Scanner;
+
+public class ExceptionMain {
+
+	public static void main(String[] args) {
+		if (args.length>0)System.out.println("args[0] = "+args[0]);
+		System.out.println();
+		
+		Scanner scan = new Scanner(System.in);
+		
+		try {
+			int num = Integer.parseInt(args[0]);
+			
+			System.out.print("숫자 입력 : ");
+			int num2 = scan.nextInt();
+			
+			
+			System.out.println(num + "/"+ num2 + "="+(num/num2));
+		}catch(NumberFormatException e) {
+			System.out.println("반드시 숫자만 가능합니다.");//에러명대체하기
+			e.printStackTrace();//원래 에러명 뜨기
+		}catch(ArithmeticException e){
+			System.out.println("0으로 나눌 수 없습니다.");
+			e.printStackTrace();
+		}finally {
+			System.out.println("error가 있건 없건 무조건 실행!!");
+		}
+	}
+
+}

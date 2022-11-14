@@ -1,0 +1,52 @@
+package sungjuk;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SungjukUpdate implements Sungjuk {
+
+	@Override
+	public void execute(ArrayList<SungjukDTO> list) {
+		System.out.println();
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("번호 입력 : ");
+		int no = scan.nextInt();
+		
+		int sw=0;
+		for(SungjukDTO sungjukDTO : list) {
+			if(sungjukDTO.getNo() == no) {
+				sw = 1;//원하는 값을 찾앗다는 의미 switch
+				
+				System.out.println();
+				System.out.println("번호\t이름\t국어\t영어\t수학\t 총점\t평균");
+				System.out.println(sungjukDTO);
+				
+				System.out.println("수정 할 이름 입력 : ");
+				String name= scan.next();
+				System.out.println("수정 할 국어 입력 : ");
+				int kor = scan.nextInt();
+				System.out.println("수정 할 영어 입력 : ");
+				int eng = scan.nextInt();
+				System.out.println("수정 할 수학 입력 : ");
+				int math = scan.nextInt();
+				
+				sungjukDTO.setName(name);
+				sungjukDTO.setKor(kor);
+				sungjukDTO.setEng(eng);
+				sungjukDTO.setMath(math);
+				
+				sungjukDTO.calc();
+				
+				System.out.println("수정하였습니다.");
+				break;
+			}//if
+		}//for
+		
+		if(sw == 0)System.out.println("잘못된 번호 입니다.");
+	}
+
+}
+
+ 
+ 

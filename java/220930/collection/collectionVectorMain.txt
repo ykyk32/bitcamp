@@ -1,0 +1,85 @@
+package collection;
+
+import java.util.Iterator;
+import java.util.Vector;
+
+public class VectorMain {
+
+	public static void main(String[] args) {
+	     Vector<String> v = new Vector<String>();
+	      System.out.println("벡터 크기 = " + v.size()); //0
+	      System.out.println("벡터 용량 = " + v.capacity()); //기본용량 10, 10개씩 증가
+	      System.out.println();
+	      
+	      System.out.println("항목 추가");
+	      for(int i=1; i<=10; i++){
+	         v.add(i + "");
+	         System.out.print( v.get(i-1) + "  "); //index는 0부터 시작
+	      }//for
+	      System.out.println();
+	      System.out.println("벡터 크기 = " + v.size()); //10
+	      System.out.println("벡터 용량 = " + v.capacity()); //10
+	      System.out.println();
+	      
+	      System.out.println("항목 1개 추가");
+	      v.addElement(5 + ""); //중복 허용
+	      System.out.println("벡터 크기 = " + v.size()); //11
+	      System.out.println("벡터 용량 = " + v.capacity()); //20
+	      System.out.println();
+	      
+	      for(int i=0; i<v.size(); i++){
+	         System.out.print(v.get(i)+"  ");
+	      }
+	      System.out.println();
+	      
+	      System.out.println("마지막 항목 삭제");
+	      //v.remove("5"); - 앞에 있는 "5"가 삭제
+	      v.remove(10);
+	      
+	      Iterator it = v.iterator(); //생성 - 메소드 이용
+	      while(it.hasNext()) {
+	         System.out.print(it.next() + "  ");
+	      }//while
+	      System.out.println();   
+
+		
+		
+		
+//		Vector<String> v = new Vector<String>();
+//		System.out.println("벡터 크기 = "+ v.size());//항목의 개수
+//		System.out.println("벡터 용량 = "+ v.capacity());//기본 용량 10,추가 시 10개씩 증가
+//		System.out.println();
+//		
+//		System.out.println("항목 추가");
+//		for(int i  =1; i<=10; i ++) {
+//			v.add(i + "");//결합의 의미-문자열로 바뀜//String.ValueOf(2)	
+//			System.out.print(v.get(i-1)+ " ");//index는 0부터 시작
+//		}//for	
+//		System.out.println();
+//		System.out.println("벡터 크기 = "+ v.size());//10
+//		System.out.println("벡터 용량 = "+ v.capacity());//10
+//		System.out.println();
+//		
+//		System.out.println("항목을 1개 추가");
+//		v.addElement(5+"");//중복허용
+//		System.out.println("벡터 크기 = "+ v.size());//11
+//		System.out.println("벡터 용량 = "+ v.capacity());//20
+//		System.out.println();
+//		
+//		for(int i =0; i <=v.size();i++) {
+//			System.out.print(v.get(i)+" ");
+//		}//for
+//		System.out.println();
+//		
+//		System.out.println("마지막 항목 삭제");
+//		//v.remove("5"); -앞에 있는 5가 삭제
+//		v.remove(10);//-index로 삭제
+//		
+//		Iterator it = v.iterator();//생성 - 메소드를 이용해서 생성
+//		while(it.hasNext()) {//it.hasNext()-항목있으면 true 없으면false
+//			System.out.print(it.next()+ "  ");//it.next()항목을 꺼내서 버퍼(임시공간)에 저장하고 다음위치로 이동
+//		}//while		
+//		System.out.println();
+	}
+
+}

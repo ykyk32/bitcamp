@@ -1,0 +1,6 @@
+package interface_;
+
+public interface InterC extends InterA, InterB {//다중상속// 클래스는 클래스끼리 인터페이스는인터펭이스끼리 상속
+	//추상메소드가 4개 
+	
+}

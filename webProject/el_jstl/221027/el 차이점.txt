@@ -1,0 +1,8 @@
+http://localhost:8080/el_jstl/el/elResult.jsp?x=25&y=36
+
+
+int x= Integer.parseInt(request.getParameter("x"));	 -get,post
+
+${param ['x']} 					 - java코드 x ,컴파일x
+
+내장객체 => param

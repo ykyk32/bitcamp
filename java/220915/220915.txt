@@ -1,0 +1,118 @@
+JDK설치								편집기
+C:\Program Files\Java\jdk-11.0.16.1					메모장, EditPlus, Eclipse
+
+
+환경변수- 자바의 위치 물어보는것
+path -경로설정
+JVM 자바가상머신(자바의 인공지능 역할)
+
+
+한글
+window - preference -encoding검색 - utf-8로 변경
+
+
+Eclipse
+1. JAVA Project : 01_basic (파일 묶음), 작업 단위
+
+
+프로젝트 가져오기
+import general existing~~
+
+2.Package        : basic (폴더)
+
+
+윈도우                       리눅스
+폴더		       디렉토리
+
+3.Class            : HelloTest.java
+
+
+*파일
+[형식]
+파일명.확장자
+길동.홍
+
+*ctrl shift + :글씨크게
+ctrl -         : 글씨 작게
+
+
+_________________________________________________________________
+객체지향프로그램(OOP- Object Oriented Programming)
+Class단위
+
+
+class 클래스명 {
+          class 클래스명 2{
+
+			}
+
+		}
+
+메소드()   -(함수)
+- 명령어들의 집합체
+- public static void main(String[] args)
+
+* Console                System 클래스가 처리
+- 입력(키보드) : System.in
+- 출력(화면) : System.out
+
+
+
+* 제어문자
+\n - new line
+\t - tab 정해진 위치로 간다(칸을 띄워준다 x)
+
+
+
+* 상수 Constant
+
+*literal (자료형의 종류)
+- 문자 literal : 'A' 'a' '5'
+- 정수형 literal
+- 실수형 literal
+- 문자열 literal "A" "a" "5"
+
+
+
+'A' = 65
+'a' = 97
+0= 0
+'0' = 48
+
+
+
+
+
+
+
+
+컴파일- 번역
+
+
+
+
+
+--------------------------------------------------------
+AA.java
+class  AA {
+	public static void main(String[] args)
+}
+
+
+class AA {}
+
+class BB {}
+
+class CC {}
+
+1. 3개중 main을 가지고 있는게 주다.  (파일명 main 있는 거랑 일치)
+
+2. public 이 주
+-----------------------------------------------------------
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+package sungjuk;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class SungjukService {
+	
+	private ArrayList<SungjukDTO> list = new ArrayList<SungjukDTO>();
+	
+	
+	public void menu() {
+		Scanner scan = new Scanner(System.in);
+		int num;
+		Sungjuk sungjuk = null;
+		while(true) {
+			System.out.println();
+			System.out.println("*******************");
+			System.out.println("       1. 입력");
+			System.out.println("       2. 출력");
+			System.out.println("       3. 수정");
+			System.out.println("       4. 삭제");
+			System.out.println("       5. 정렬");
+			System.out.println("       6. 끝");
+			System.out.println("*******************");
+			System.out.print("   번호 : ");
+			
+			num= scan.nextInt();
+			if(num==6)break;			
+			if(num==1) sungjuk=new SungjukInsert();			
+			else if(num==2) sungjuk=new SungjukList();
+			else if(num==3) sungjuk= new SungjukUpdate();
+			else if(num==4)sungjuk = new SungjukDelete();
+			else if(num==5)sungjuk = new SungjukSort();
+			else {
+				System.out.println("1~6 중에 선택하세요");
+				continue;
+			}
+			
+			sungjuk.execute(list);//호출
+		}//while
+		
+	}
+	
+}

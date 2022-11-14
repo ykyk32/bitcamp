@@ -1,0 +1,11 @@
+*interface
+1. implements
+  모든 추상메소드 Override
+
+2. 대신 implements 를 해주는 클래스가 있다 
+
+3. 메소드
+	Iterator it = list.Iterator
+4.new 인터페이스() {//익명 inner
+	모든 추상메소드 Override
+}

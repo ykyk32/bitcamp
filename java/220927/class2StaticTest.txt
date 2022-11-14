@@ -1,0 +1,70 @@
+package class2;
+
+class StaticTest{
+	private int a;        //필드,인스턴스 변수
+	private static int b; //필드,클래스 변수//생성자에서 초기화 불가능
+	
+	static {
+		System.out.println("초기화 영역");
+		b=7;
+	}
+	
+	public StaticTest() {//기본생성자= 초기화목적
+		System.out.println("기본 생성자");
+		this.a=7;
+		
+	}
+	public void calc() {
+		a++;
+		b++;
+	}
+	public void disp() {
+		System.out.println("a=" +this. a + "\t b=" + StaticTest.b);
+	}
+	
+	
+	public static void output() {
+		System.out.println("static method ...");
+		//System.out.println("a="+ a +"\t b=" + b);//static 메소드 안에는this없다.static안에는 static만 사용가능 대표 void main
+		
+	}
+}
+//---------------------------
+public class StaticMain {
+
+	public static void main(String[] args) {
+		StaticTest st = new StaticTest();
+		st.calc();
+		st.disp();
+		System.out.println();
+		
+		StaticTest st2 = new StaticTest();
+		st2.calc();
+		st2.disp();
+		System.out.println();
+		
+		StaticTest st3 = new StaticTest();
+		st3.calc();
+		st3.disp();
+		System.out.println();
+
+		StaticTest.output();//클래드명.메소드()
+		st.output();//객체.매소드()
+	}
+
+}
+
+[결과]
+초기화 영역
+기본 생성자
+a=8	 b=8
+
+기본 생성자
+a=8	 b=9
+
+기본 생성자
+a=8	 b=10
+
+static method ...
+static method ...
+

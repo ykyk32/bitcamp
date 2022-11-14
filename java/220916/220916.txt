@@ -1,0 +1,124 @@
+class파일은 기계어파일 x, 바이트코드
+JVM에 의해서 처리 ->느리다
+
+
+'A' > 0100 0001 >65
+"A" > 주소
+-----------
+블록지정 alt + 방향키  - 블록이동
+------------------------------------------------------------------------
+java api 8 ..설명서 검색
+
+
+java_se                                                                java                         
+    lib                                                                   applet
+    work space                                                         awt             
+
+java_se\lib                                                        java.applet
+					         java.awt
+				
+					  java.lang(default package)
+
+
+
+
+class 클래스명 {
+              필드;
+
+           메소드()
+
+}
+
+-----------------------------------------------------------------------
+솔루션  => 유지보수처리 => sm
+
+------------------------------------------------------------------------------
+class String{
+           필드;
+	
+	메소드()
+	static format() -형식을 지정
+
+}
+
+* 변환문자
+%d - data가 정수형으로
+%f - ,%전체자리수(생략가능).소수이하자릿수f
+    %7.5f = %0.5f = %.5f
+%c - 문자
+%s - 문자열
+%x - 16진수
+
+[실행]
+    System.out.println(a + " / " + b + " = " + String.format("%7.5f",div));
+
+
+
+
+class DecimalFormat{
+           필드;
+	
+	메소드()
+	format()  - 세 자리마다 , 쉼표표기 ex)1,000
+
+}
+
+[실행]
+   import java.text.DecimalFormat;  //static 아니니까 import 
+   System.out.println(a + " * " + b + " = " +new DecimalFormat().format(mul));//세자리마다 쉼표	
+
+
+
+
+class Math{
+                                   Over load //이름이 같다- 하나의 클래스안에 같은이름의 함수
+
+	static double	max(double a, double b)
+	static float	max(float a, float b)
+	static int		max(int	 a, int	 b)
+	static long	max(long a, long b)
+
+	static double	random()
+
+}
+-------------------------------------------------------
+class Random{
+	
+	double		nextDouble()
+
+	int		nextInt()
+	int 		nextInt(int a)
+
+}                                           
+override와 overload의 차이점?
+
+--------------------------
+
+r                                 Random
+
+객체,Random의 인스턴스
+해쉬코드(주소)
+클래스 @ 16진수
+
+
+-------------------------------------------------
+
+
+java.lang에 없으면 import 써
+
+static 있다 new 안써(써도 됨)
+static 없다 new 반드시 써
+
+-------------------------------------------------
+java.util
+class Scanner{
+
+	int nextInt()
+	int nextDouble()
+ 	int next()
+
+}
+
+
+
+
